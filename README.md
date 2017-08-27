@@ -1,2 +1,6 @@
-# webpack-config-scss-pug-lint-watch
-Webpack configuration for front-end development
+# Webpack Front-end Set up
+- SCSS / PUG Compile
+- Lint
+- Browser Sync
+
+
