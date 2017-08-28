@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -r docs/*",
     "test": "jest",
-    "pug": "pug -P src --out docs",
+    "pug": "pug -P src/*.pug --out docs",
     "lint": "stylelint src/*.scss --config .stylelintrc --syntax scss & pug-lint src/*.pug",
     "sass": "node-sass --output-style compressed src/style.scss docs/assets/css/style.css",
     "build": "npm run clean && npm run sass && npm run pug && npm run webpack",
@@ -14,7 +14,7 @@
     "sync": "browser-sync start --server docs --index index.html --files 'docs/assets/css/*.css, docs/*.html, docs/*.js' --port 4000",
     "watch-sass": "node-sass --output-style compressed src/style.scss docs/assets/css/style.css --w scss",
     "watch-js": "webpack --config webpack.config.js --watch",
-    "watch-pug": "pug -w -P src --out docs",
+    "watch-pug": "pug -w -P src/*.pug --out docs",
     "start": "npm run watch-sass & npm run watch-pug & npm run watch-js & npm run sync"
   },
 
