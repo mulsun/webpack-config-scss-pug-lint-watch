@@ -3,4 +3,4 @@
 - Lint
 - Browser Sync
 
-
+webpack --display-error-details
